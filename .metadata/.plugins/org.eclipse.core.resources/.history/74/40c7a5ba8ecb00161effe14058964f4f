@@ -1,0 +1,43 @@
+import java.util.List;
+
+public class clsBajaPersonas implements intEntrada
+{
+	@Override
+	public void ConsultarDatos(List<clsContactoPersona> ListaPersonas) {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void BorrarUsuario(long dni, List<clsContactoPersona> ListaPersonas) 
+	{
+		boolean encontrado = false;
+		int i = 0;
+		try
+		{
+			while(encontrado == false && i<ListaPersonas.size()){
+				if(ListaPersonas.get(i).getDni() == dni)
+				{
+					encontrado = true;
+				}else
+				{
+					i++;
+				}
+			}
+			if(encontrado)
+			{
+				ListaPersonas.remove(ListaPersonas.indexOf(i));
+				System.out.println("Usuario eliminado con exito!");
+			}
+		}
+		catch(Exception e)
+		{
+			throw e;
+		}
+
+			if(!encontrado)
+			{
+				System.out.println("no se ah encontrado el usuario ingresado!");
+			}
+	}
+	
+}

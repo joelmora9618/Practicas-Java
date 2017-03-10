@@ -1,0 +1,25 @@
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JButton;;
+
+public class Program {
+	
+	public static void main(String[]args)
+	{
+		JFrame ventana = new JFrame("Titulo");
+		ventana.getContentPane().setLayout(new FlowLayout());
+		
+		JLabel etiqueta = new JLabel();
+		etiqueta.setText("Hola mundo");
+		
+		JButton button = new JButton();
+		button.setText("Ingresar");
+		
+		ventana.getContentPane().add(etiqueta);
+		ventana.getContentPane().add(button);
+		ventana.setVisible(true);
+	}
+
+}

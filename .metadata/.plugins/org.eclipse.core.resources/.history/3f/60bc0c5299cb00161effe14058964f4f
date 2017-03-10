@@ -1,0 +1,24 @@
+
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Ventana extends JFrame {
+	
+	public Ventana()
+	{
+		setTitle("Ventana");
+		setBounds(300,300,500,500);
+		setVisible(true);
+		Container content = getContentPane();
+		JButton button = new JButton(new ImageIcon("button1.png"));
+		content.setLayout(new GridLayout(2,2));
+		content.add(button);
+		
+	}
+}
