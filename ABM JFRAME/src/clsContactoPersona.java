@@ -1,6 +1,5 @@
-import java.io.Serializable;
 
-public class clsContactoPersona extends clsBasePersona implements Serializable
+public class clsContactoPersona extends clsBasePersona 
 {
 	private String telefono1;
 	private String telefono2;

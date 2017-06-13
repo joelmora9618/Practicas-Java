@@ -1,6 +1,5 @@
-import java.io.Serializable;
 
-public class clsDireccionesPersona implements Serializable
+public class clsDireccionesPersona
 {
 	private String localidad;
 	private String calle;

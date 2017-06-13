@@ -1,4 +1,8 @@
+package abm_fun;
 import java.util.List;
+
+import Interface.intEntrada;
+import Model.clsContactoPersona;
 
 public class clsBajaPersonas implements intEntrada
 {

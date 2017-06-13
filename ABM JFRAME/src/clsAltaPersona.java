@@ -20,17 +20,17 @@ public class clsAltaPersona implements intEntrada
 			int edad = 0;
 			long dni = 0;
 			
-			System.out.println("ingrese su nombre: ");
+			System.out.print("ingrese su nombre: ");
 			nombre = buffer.readLine();
 			
-			System.out.println("ingrese su apellido: ");
+			System.out.print("ingrese su apellido: ");
 			apellido = buffer.readLine();
 			
 			System.out.print("ingrese su edad: ");
 			value = buffer.readLine();
 			edad = Integer.parseInt(value);
 			
-			System.out.println("ingrese su dni: ");
+			System.out.print("ingrese su dni: ");
 			value = buffer.readLine();
 			dni = Long.parseLong(value);
 			
@@ -44,10 +44,8 @@ public class clsAltaPersona implements intEntrada
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
-			}
-			
+			}	
 		}
-
 	}
 
 	@Override
